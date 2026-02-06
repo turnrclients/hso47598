@@ -1,0 +1,138 @@
+<header id="page-header" class="header-25">
+	<div class="header-holder">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-6 col-sm-3">
+					<!-- logo -->
+					<div class="logo ">
+						<a href="home.html">
+							<img class="hidden-xs" src="assets/images/header-25-logo.png" alt="logo">
+							<img class="hidden-sm hidden-md hidden-lg"
+								src="assets/images/header-25-logo.png" alt="logo">
+						</a>
+					</div>
+				</div>
+				<div class="col-xs-6 col-sm-9 static-block ">
+					<!-- nav -->
+					<nav id="nav" class="navbar navbar-default justify-end ">
+						<div class=" navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+								data-target="#dynamic-header" aria-expanded="false">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div>
+						<!-- navbar collapse -->
+						<div class="collapse navbar-collapse" id="dynamic-header">
+							<ul class="nav navbar-nav navbar-right main-navigation text-uppercase font-lato">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="Menu.html">Menu</a></li>
+								<li><a href="Blog.html">Blog</a></li>
+								<li><a href="Service.html">Service</a></li>
+								<li><a href="Contact.html">Contact</a></li>
+							</ul>
+						</div>
+
+
+
+					</nav>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</header>
+<div class="slider-container header-section-area main-header-section">
+	<div class="slider-card active"
+		style="background-image: url('assets/images/header-25-1.jpg');">
+		<div class="header-25-content">
+			<div class="title">Cafe Culture</div>
+			<div class="subtitle">
+				Experience the aroma of<br>
+				freshly brewed coffee and<br>
+				the warmth of cozy interiors
+			</div>
+			<button class="btn">Explore</button>
+		</div>
+		<div class="vertical-text">Cafe</div>
+	</div>
+
+	<div class="slider-card"
+		style="background-image: url('assets/images/header-25-2.jpg');">
+		<div class="header-25-content">
+			<div class="title">Baking Bliss</div>
+			<div class="subtitle">
+				Indulge in delightful pastries<br>
+				with rich flavors and textures<br>
+				made fresh every morning
+			</div>
+			<button class="btn">Explore</button>
+		</div>
+		<div class="vertical-text">Bakery</div>
+	</div>
+
+	<div class="slider-card"
+		style="background-image: url('assets/images/header-25-3.jpg');">
+		<div class="header-25-content">
+			<div class="title">Sweet Haven</div>
+			<div class="subtitle">
+				Your go-to destination for<br>
+				cakes, cookies, and treats<br>
+				that sweeten every moment
+			</div>
+			<button class="btn">Explore</button>
+		</div>
+		<div class="vertical-text">Pastry</div>
+	</div>
+
+	<div class="slider-card"
+		style="background-image: url('assets/images/header-25-4.jpg');">
+		<div class="header-25-content">
+			<div class="title">Bread Stories</div>
+			<div class="subtitle">
+				Every loaf tells a tale of<br>
+				tradition, flavor, and care<br>
+				straight from our ovens
+			</div>
+			<button class="btn">Explore</button>
+		</div>
+		<div class="vertical-text">Bread</div>
+	</div>
+
+	<div class="slider-card"
+		style="background-image: url('assets/images/header-25-5.jpg');">
+		<div class="header-25-content">
+			<div class="title">Latte Vibes</div>
+			<div class="subtitle">
+				Chill with frothy lattes in<br>
+				an aesthetic ambiance that<br>
+				soothes your soul and senses
+			</div>
+			<button class="btn">Explore</button>
+		</div>
+		<div class="vertical-text">Latte</div>
+	</div>
+</div>
+
+<script>
+	const cards = document.querySelectorAll(".slider-card");
+
+	cards.forEach((card) => {
+		card.addEventListener("mouseenter", () => {
+			cards.forEach((c) => c.classList.remove("active"));
+			card.classList.add("active");
+		});
+	});
+</script>
+
+<section class="header-breadcrumb-section"
+	style="background:url('assets/images/header-breadcrumb-section-bg.jpg') no-repeat center/cover;">
+	<div class="container text-center">
+		<h1 class="header-breadcrumb-section-title"><span class="Page_name">Page Name</span></h1>
+		<p class="header-breadcrumb-section-breadcrumb">
+			<a href="index.html">Home</a> &gt; <span class="Page_name">Page Name</span>
+		</p>
+	</div>
+</section>

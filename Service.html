@@ -1,0 +1,155 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Extracted Page">
+    <title>Service</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;family=Open+Sans:wght@400;600&amp;display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/middle_sections.css">
+    <link rel="stylesheet" href="assets/css/anim-effects.css">
+    <link rel="stylesheet" href="assets/css/components/header-25.css">
+    <link rel="stylesheet" href="assets/css/components/footer-7.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/plugins.css">
+    <link rel="stylesheet" href="assets/css/custom-Imports.css">
+    <link rel="stylesheet" href="assets/css/resonsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <style>
+        :root {
+            --site-font: "Rajdhani", sans-serif;
+        }
+
+        body,
+        #wrapper,
+        #wrapper * {
+            font-family: var(--site-font) !important;
+        }
+    </style>
+    <link rel="stylesheet" href="assets/css/custom/editmode.css">
+</head>
+
+<body class="theme-1">
+    <div id="wrapper" class="editableSection">
+        <div id="header" class=""></div>
+        <div id="mainPageContent" class="">
+            <div class="section-wrapper home-4 texture-bg anim-slide-up" id="section-51e5en0wwsr">
+                <article class="container fade-in">
+                    <p class="home-4-description text-center">
+                        Explore Brew Nest Café stories, recipes, and tips on enjoying the perfect coffee, delicious
+                        pastries,
+                        and cozy dining experiences crafted for you.
+                    </p>
+
+                    <div class="row">
+
+                        <!-- Blog 1 - Coffee -->
+                        <div class="col-sm-4">
+                            <div class="home-4-blog">
+                                <img src="assets/images/Digital-smile-designing-bg.jpg"
+                                    alt="Coffee Brewing Tips" class="home-4-image updateImg">
+                                <p class="home-4-date">15 April 2025</p>
+                                <h3 class="home-4-blog-title">5 Secrets to Brewing the Perfect Cappuccino</h3>
+                                <p class="home-4-text">
+                                    Discover how to make café-style cappuccinos at home with simple techniques from our
+                                    baristas.
+                                </p>
+                                <a class="home-4-link" href="#">Read More →</a>
+                            </div>
+                        </div>
+
+                        <!-- Blog 2 - Pastries -->
+                        <div class="col-sm-4">
+                            <div class="home-4-blog">
+                                <img src="assets/images/fillers-bg.jpg" alt="Fresh Pastries"
+                                    class="home-4-image updateImg">
+                                <p class="home-4-date">10 April 2025</p>
+                                <h3 class="home-4-blog-title">Why Freshly Baked Pastries Taste Better</h3>
+                                <p class="home-4-text">
+                                    From buttery croissants to blueberry muffins, learn why freshness makes all the
+                                    difference.
+                                </p>
+                                <a class="home-4-link" href="#">Read More →</a>
+                            </div>
+                        </div>
+
+                        <!-- Blog 3 - Café Lifestyle -->
+                        <div class="col-sm-4">
+                            <div class="home-4-blog">
+                                <img src="assets/images/weight-management-bg.jpg" alt="Cafe Lifestyle"
+                                    class="home-4-image updateImg">
+                                <p class="home-4-date">05 April 2025</p>
+                                <h3 class="home-4-blog-title">The Joy of a Cozy Café Experience</h3>
+                                <p class="home-4-text">
+                                    Relax, sip your latte, and enjoy the simple pleasure of connecting over good food
+                                    and coffee.
+                                </p>
+                                <a class="home-4-link" href="#">Read More →</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </article>
+            </div>
+
+        </div>
+        <div id="footer" class=""></div>
+    </div>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/init.js"></script>
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/jquery.main.js"></script>
+    <script src="assets/js/gsap.min.js"></script>
+    <script src="assets/js/ScrollTrigger.min.js"></script>
+    <script src="assets/js/Observer.min.js"></script>
+    <script src="assets/js/gsap.effects.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="assets/js/common_js/send_email.js"></script>
+    <script src="assets/js/common_js/html_image_editor.js"></script>
+    <script src="assets/js/common_js/windows_postmessage.js"></script>
+    <script>
+        var fileName = document.title || "index";
+
+        $(document).ready(function () {
+     	   loadHeaderFooter("header", "client-assets/hso47598/hso47598/header.html");
+       	   loadHeaderFooter("footer", "client-assets/hso47598/hso47598/footer.html");
+
+	       loadHeaderFooter("header", "header.html");
+           loadHeaderFooter("footer", "footer.html");
+        });
+
+        function loadHeaderFooter(id, file) {
+            $("#" + id).load(file, function (response, status, xhr) {
+                if (status === "error") {
+                    console.error("Error loading " + file + ":", xhr.status, xhr.statusText);
+                    return;
+                }
+
+                $("#" + id).find("a").addClass("edit-site");
+
+                if (id === "header") {
+                    if (fileName.toLowerCase() === "index" || fileName.toLowerCase() === "home") {
+                        $("#" + id).find(".header-breadcrumb-section").css("display", "none");
+                    } else {
+                        $("#" + id).find(".main-header-section").css("display", "none");
+                        $("#" + id).find(".header-breadcrumb-section").css("display", "inline-block");
+                        $("#" + id).find(".header-breadcrumb-section .Page_name")
+                            .text(fileName.charAt(0).toUpperCase() + fileName.slice(1));
+                    }
+                }
+            });
+        }
+    </script>
+    <script src="assets/js/middle-section.js"></script>
+
+
+
+    <input type="hidden" class="hidden selectedPageName" name="selectedPageName" value="Contact.html">
+    <form method="post" id="imgForm" action="fuos/" enctype="multipart/form-data"><input id="" type="text"
+            class="hidden formFieldFileName" name="imgFileName" value=""></form>
+</body>
